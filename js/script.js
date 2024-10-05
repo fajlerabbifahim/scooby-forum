@@ -1,10 +1,5 @@
 const loadAllPost = async (category) => {
-  //   console.log(
-  //     `https://openapi.programming-hero.com/api/retro-forum/posts${
-  //       category ? `?category=${category}` : ""
-  //     }`
-  //   );
-
+  document.getElementById("post-container").innerHTML = "";
   const res = await fetch(
     `https://openapi.programming-hero.com/api/retro-forum/posts${
       category ? `?category=${category}` : ""
